@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清华大学 - 自强不息，厚德载物</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>清华大学</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="departments.html">院系介绍</a></li>
+                <li><a href="admissions.html">招生信息</a></li>
+                <li><a href="campus.html">校园风采</a></li>
+                <li><a href="announcements.html">学校公告</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <section class="hero">
+        <div class="carousel-container">
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <!-- 轮播图内容将通过 JS 动态加载 -->
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prevBtn">‹</button>
+                <button class="carousel-btn next" id="nextBtn">›</button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <!-- 重要公告 -->
+        <section class="section announcements-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">📢</span>
+                    重要公告
+                </h2>
+                <div class="announcements-grid" id="announcementsGrid">
+                    <!-- 公告内容将通过 JS 动态加载 -->
+                </div>
+                <div class="section-footer">
+                    <a href="announcements.html" class="btn-more">查看更多公告 →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新闻动态 -->
+        <section class="section news-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">📰</span>
+                    新闻动态
+                </h2>
+                <div class="news-grid" id="newsGrid">
+                    <!-- 新闻内容将通过 JS 动态加载 -->
+                </div>
+                <div class="section-footer">
+                    <a href="news.html" class="btn-more">查看更多新闻 →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 院系介绍 -->
+        <section class="section departments-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">🏛️</span>
+                    院系介绍
+                </h2>
+                <div class="departments-grid" id="departmentsGrid">
+                    <!-- 院系内容将通过 JS 动态加载 -->
+                </div>
+                <div class="section-footer">
+                    <a href="departments.html" class="btn-more">查看所有院系 →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 招生信息 -->
+        <section class="section admissions-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">🎓</span>
+                    招生信息
+                </h2>
+                <div class="admissions-grid" id="admissionsGrid">
+                    <!-- 招生信息内容将通过 JS 动态加载 -->
+                </div>
+                <div class="section-footer">
+                    <a href="admissions.html" class="btn-more">查看更多招生信息 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>清华大学</h3>
+                    <p>自强不息，厚德载物</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="departments.html">院系介绍</a></li>
+                        <li><a href="admissions.html">招生信息</a></li>
+                        <li><a href="campus.html">校园风采</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>地址：北京市海淀区清华园1号</p>
+                    <p>电话：010-62785001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 清华大学. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

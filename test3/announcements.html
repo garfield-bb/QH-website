@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学校公告 - 清华大学</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>清华大学</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="departments.html">院系介绍</a></li>
+                <li><a href="admissions.html">招生信息</a></li>
+                <li><a href="campus.html">校园风采</a></li>
+                <li><a href="announcements.html" class="active">学校公告</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main">
+        <div class="page-header">
+            <div class="container">
+                <h1>学校公告</h1>
+                <p>重要通知与公告信息</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="announcements-list" id="announcementsList">
+                <!-- 公告列表将通过 JS 动态加载 -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>清华大学</h3>
+                    <p>自强不息，厚德载物</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="departments.html">院系介绍</a></li>
+                        <li><a href="admissions.html">招生信息</a></li>
+                        <li><a href="campus.html">校园风采</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>地址：北京市海淀区清华园1号</p>
+                    <p>电话：010-62785001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 清华大学. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/pages.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            initNavbar();
+            await loadAnnouncementsList();
+        });
+    </script>
+</body>
+</html>
